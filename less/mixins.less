@@ -4,13 +4,24 @@
     border-bottom: 1px dashed @silver;
 }
 
+
+
 .btn {
     width: 85%;
+    text-decoration: none;
     height: 3rem;
     border-radius: 1rem;
     background: @eastern-blue;
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    padding: .5em;
+    width: 85%;
+    cursor:pointer;
+    padding-top:.5rem;
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
 }
