@@ -5,25 +5,45 @@ nav {
     .bordered;
     margin: 20px 0 0px 0;
     padding-bottom: 20px;
+
+    @media @mobile {
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    
     
     .logo{
         width:55%;
+        @media @mobile{
+            width:100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 10px;
+        }
         #logo-font{
             font-size: 3rem;
             text-decoration:none;
             font-family: Indie Flower, cursive;
-            color: black;
+            color: @shark;
         }
     }
     .nav-items{
         display: flex;
         width: 45%;
         justify-content: space-around;
+
+        @media @mobile {
+            width:100%;
+        }
         a {        
             text-decoration: none;
-            color: black;
+            color: @shark;
             font-size: 1.3rem;
         }
         
+        
     }
+
+    
 }
+
